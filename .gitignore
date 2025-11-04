@@ -1,0 +1,32 @@
+# Compiled class files
+*.class
+
+# Java build folders
+/out/
+/bin/
+/target/
+
+# Maven / Gradle
+.mvn/
+.gradle/
+build/
+
+# VSCode
+.vscode/
+
+# IDE files
+.idea/
+*.iml
+
+# Mac/Windows files
+.DS_Store
+Thumbs.db
+
+# Go
+/vendor/
+*.exe
+*.test
+*.out
+
+# Logs
+.log
