@@ -1,0 +1,45 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Fibonacci API (Java)",
+    "version": "1.0"
+  },
+  "paths": {
+    "/fibonacci": {
+      "post": {
+        "summary": "Compute fibonacci",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "iterations": { "type": "integer", "example": 100 },
+                  "n": { "type": "integer", "example": 30 }
+                },
+                "required": ["iterations", "n"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "result": { "type": "integer" },
+                    "execution_time_ms": { "type": "integer" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
